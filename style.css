@@ -1,0 +1,255 @@
+@import  url("css/supersized.core.css");
+@import url("css/jquery.countdown.css");
+
+/*CSS3 webfont*/
+
+
+/*------General styles - for the paragraphs, fonts and others-------*/
+*{ margin:0; padding:0; }
+body { background:#111; height:100%; }
+img { border:none; }
+.clear {clear:both;}
+.darker {color:#161616;}
+
+/*-------Little Top right Button---------*/
+.little-button {
+	max-width:400px;
+	width:100%;
+	min-width: 300px;
+	height:0px;
+	text-align: right;
+	margin-left:auto;
+}
+.little-button a {
+	display: block;
+	color:transparent;
+	background:url('images/contact.png') no-repeat;
+	width:41px;
+	height:39px;
+}
+a.home {background:url('images/home.png') no-repeat;}
+#content {
+	background:url("images/content-wrapper-bg.png") no-repeat center;
+	max-width:506px;
+	height:632px;
+	padding:70px 77px 0px 77px;
+	margin:40px auto 40px auto;
+}
+#content img.logo {display:block;margin:0 auto;}
+img.centered-leaf {
+	display:block;
+    margin:32px auto 28px auto;
+	clear:left;
+}
+img.leaf-bottom {margin-top: -130px;}
+#content p {
+	font-family:"Droid Sans", Arial, sans;
+	font-size: .875em;
+	line-height: 1.25em;
+	color:#262626;
+	text-align:center;
+	-webkit-text-shadow:0 1px 1px rgba(255,255,255,.35);
+	-moz-text-shadow:0 1px 1px rgba(255,255,255,.35);
+	text-shadow:0 1px 1px rgba(255,255,255,.35);
+}
+
+/*-------COUNTDOWN-------*/
+#countdown {
+	width: 506px;  
+	height:140px;
+	display: inline;
+	float: left;
+	margin-top:35px;
+}
+
+.numbers {
+	font-family: Droid Serif, Georgia, Times, serif;
+	font-size: 72px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	width: 445px;  
+	height: 55px;	
+	margin-left: auto;
+	margin-right: auto;
+    color: #282828;
+	text-shadow:0 1px 1px rgba(255,255,255,0.15);
+	-moz-text-shadow:0 1px 1px rgba(255,255,255,0.15);
+	-webkit-text-shadow:0 1px 1px rgba(255,255,255,0.15);
+}
+.timer_numbers {
+	float: left;   
+	height: 70px; 
+	width: 75px; 
+	display: inline;
+	position: relative;
+	margin-top: 0px;
+	margin-left: 47px;
+	margin-right: auto;
+	
+}
+.timer_numbers:first-child  {
+    margin-left:25px;
+}
+ .labels {
+	font-family: Droid Sans, Arial, sans;
+	font-size: .75em;
+	color: #fff;
+	text-transform: uppercase;
+	display: block;
+	width: 60px;
+	height: 11px;
+	text-align:center;	
+	padding-left:5px;
+	line-height:.5em;
+}
+
+.timer_labels {
+	height: 10px;
+	text-align:center;	
+	padding-right:1px;
+	display: inline;
+	position:relative;
+	font-size: 12px;
+	color: #fff;
+	text-transform: uppercase;
+	width: 80px;
+	padding-left:0px;
+	text-align:center;
+	margin-right:5px;
+	margin-left:1px;
+} 
+
+#timer_days_label {padding-left: 40px;}
+#timer_hours_label {padding-left:84px;}
+#timer_mins_label {padding-left:67px;}
+#timer_seconds_label {padding-left:64px;}
+
+
+/*------------SUBSCRIBE--------------*/
+form.subscribe {
+	margin:15px auto 20px auto;
+	width:425px;
+}
+form.subscribe input.email, form.subscribe textarea {
+	background:rgba(0,0,0,0.4);
+	/*The line below is for Mr Ie*/
+	filter: alpha(opacity=80);
+	height:14px;
+	padding:10px 8px;
+	width:274px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius: 5px;
+    border:1px solid #202020;
+    -webkit-box-shadow:inset 0px 1px 10px rgba(0,0,0,0.3);
+    -moz-box-shadow:inset 0px 1px 10px rgba(0,0,0,0.3);
+    box-shadow:inset 0px 1px 10px rgba(0,0,0,0.3);
+    font-family:Droid Sans, Arial, sans;
+    font-size:.875em;
+    color:#efefef;
+	float:left;
+	transition:background .2s ease-in;
+	-moz-transition:background .2s ease-in;
+	-webkit-transition:background .2s ease-in;
+}
+form.subscribe input.email:focus {
+	outline:none;
+}
+form.subscribe input.submit {
+	background:rgba(214,52,8,0.75);
+	/*The line below is for Mr Ie*/
+	filter: alpha(opacity=90);
+	width:123px;
+	height:36px;
+	margin-left:10px;
+	-webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius: 8px;
+    font-family:Droid Sans, Arial, sans;
+    font-size: .75em;
+    text-transform: uppercase;
+    color:#fff;
+    border:1px solid #9c2d0c;
+    outline: none;
+	transition:background .2s ease-in;
+	-moz-transition:background .2s ease-in;
+	-webkit-transition:background .2s ease-in;
+}
+form.subscribe input.submit:hover {
+	background:rgba(163,51,18,0.6);
+	/*The line below is for Mr Ie*/
+	filter: alpha(opacity=70);
+}
+form.subscribe input.dis {margin-bottom: 15px;max-width:300px;}
+form.subscribe textarea {min-height: 60px;float:none;}
+form.contact {width:292px !important;margin:20px auto 0px auto;}
+form.contact input.submit {margin-top: 10px;}
+
+/*----------CUUTER - slices the line divider accordingly*/
+.cutter {
+	width:100%;
+	overflow: hidden;
+}
+/*----------SOCIAL MEDIA PART-----------*/
+#social {
+	width:76px;
+	height:24px;
+	margin:10px auto 0px auto;
+}
+#social li {
+	list-style: none;
+	float:left;
+	margin-left:10px;
+}
+#social li.first {margin-left:0;}
+#social li a {
+    width:32px;
+	height:32px;
+	text-indent:-9999px;
+	display:block;
+	transition:background .2s ease-in;
+	-moz-transition:background .2s ease-in;
+	-webkit-transition:background .2s ease-in;
+}
+#social li a.facebook {background:url('images/facebook_dark.png') no-repeat;}
+#social li a.facebook:hover {background:url('images/facebook.png') no-repeat;}
+#social li a.google {background:url('images/google_dark.png') no-repeat;}
+#social li a.google:hover {background:url('images/google.png') no-repeat;}
+#social li a.twitter {background:url('images/twitter_dark.png') no-repeat;}
+#social li a.twitter:hover {background:url('images/twitter.png') no-repeat;}
+#social li a.skype {background:url('images/skype_dark.png') no-repeat;}
+#social li a.skype:hover {background:url('images/skype.png') no-repeat;}
+#social li a.stumble {background:url('images/stumbleupon_dark.png') no-repeat;}
+#social li a.stumble:hover {background:url('images/stumbleupon.png') no-repeat;}
+#social li a.myspace {background:url('images/myspace_dark.png') no-repeat;}
+#social li a.myspace:hover {background:url('images/myspace.png') no-repeat;}
+
+
+/*-------These are styles needed for the responsive part*/
+@media screen and (max-width: 600px) {
+	#content {
+		background:url('images/mobile-content-wrapper.png') no-repeat;
+		width:413px;
+		height:auto;
+		padding:70px 20px 0px 20px;
+	}
+	#countdown {width:280px;height:300px;margin:0 80px 0 40px;position:relative;}
+	.numbers {width:200px;}
+	.content-bottom {
+		background:url('images/mobile-content-wrapper-bottom.png') no-repeat;
+		width:413px;
+		height:100px;
+		padding:15px 20px 0px 20px;
+		margin:-40px auto 40px auto;
+	}
+	img.leaf-bottom {margin-top: 20px;}
+	.timer_numbers {margin:30px 0px 10px 50px;}
+	.timer_numbers:first-child {margin-left:50px;}
+	#timer_days_label {padding-left: 70px;top:-130px;}
+    #timer_hours_label {padding-left:84px;top:-130px;}
+    #timer_mins_label {margin-left: -245px;}
+    #timer_seconds_label {padding-left:66px;}
+	form.subscribe {width:380px;}
+	form.subscribe input.email, form.subscribe textarea {width:229px;}
+	form.contact input.email, form.contact textarea {width:292px !important;}
+}
